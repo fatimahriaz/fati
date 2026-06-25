@@ -1,0 +1,21 @@
+.incremental-mr-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.incremental-mr-page__header h2 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.incremental-mr-page__header p {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-top: var(--space-1);
+}
+
+.incremental-mr-page__controls {
+  display: flex;
+}

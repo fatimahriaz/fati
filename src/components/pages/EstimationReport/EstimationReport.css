@@ -1,0 +1,40 @@
+.estimation-report-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.estimation-report-page__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.estimation-report-page__header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2329;
+}
+
+.estimation-report-page__header p {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.estimation-report-page__actions {
+  display: flex;
+  gap: 12px;
+}
+
+.estimation-report-page__stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 1024px) {
+  .estimation-report-page__stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

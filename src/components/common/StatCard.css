@@ -1,0 +1,55 @@
+.stat-card {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-card);
+}
+
+.stat-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+}
+
+.stat-card__icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  background-color: #f3e3e6; /* light maroon tint, matches the Figma icon badges */
+  color: var(--color-brand-maroon);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-card__delta {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.stat-card__delta--positive {
+  color: var(--color-success-text);
+}
+
+.stat-card__delta--negative {
+  color: #c0392b;
+}
+
+.stat-card__delta--neutral {
+  color: var(--color-text-secondary);
+}
+
+.stat-card__value {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  line-height: 1.2;
+}
+
+.stat-card__label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-top: var(--space-1);
+}

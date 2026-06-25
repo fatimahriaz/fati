@@ -1,0 +1,77 @@
+/* ==========================================================================
+   GLOBAL STYLES
+   Base resets and page-wide defaults. Component-specific styles live next
+   to their component (e.g. Sidebar.css next to Sidebar.jsx) so each piece
+   stays self-contained and easy to find.
+   ========================================================================== */
+
+@import "./variables.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-md);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-page);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input {
+  font-family: inherit;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+/* Visible keyboard focus outline for accessibility.
+   Never remove focus styles without replacing them with something visible. */
+:focus-visible {
+  outline: 2px solid var(--color-brand-maroon);
+  outline-offset: 2px;
+}
+
+/* Respect users who've asked for reduced motion at the OS level. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
