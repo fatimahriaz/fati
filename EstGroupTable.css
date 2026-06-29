@@ -1,0 +1,17 @@
+.est-group-table {
+  margin-bottom: var(--space-8);
+}
+
+.est-group-table__title {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-3);
+}
+
+/* Bold the Total row so it stands out from the regular age-bucket rows,
+   matching the bold "Total" label seen in the real backend screenshots. */
+.est-group-table tr:last-child td {
+  font-weight: var(--font-weight-semibold);
+  border-top: 2px solid var(--color-border);
+}

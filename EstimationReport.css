@@ -1,0 +1,45 @@
+.estimation-report-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.estimation-report-page__header h2 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.estimation-report-page__header p {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-top: var(--space-1);
+  margin-bottom: var(--space-6);
+}
+
+.estimation-report-page__date-selector {
+  margin-bottom: var(--space-6);
+}
+
+.estimation-report-page__date-label {
+  display: block;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.estimation-report-page__date-select {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-card);
+  min-width: 200px;
+}
+
+.estimation-report-page__date-select:focus {
+  outline: none;
+  border-color: var(--color-brand-maroon);
+}
