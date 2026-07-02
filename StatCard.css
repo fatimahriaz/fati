@@ -1,0 +1,54 @@
+.stat-card {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-card);
+}
+
+.stat-card__top {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: var(--space-3);
+  min-height: 20px;
+}
+
+.stat-card__delta {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.stat-card__delta--positive { color: var(--color-success-text); }
+.stat-card__delta--negative { color: #c0392b; }
+.stat-card__delta--neutral  { color: var(--color-text-secondary); }
+
+.stat-card__value {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  line-height: 1.2;
+}
+
+.stat-card__label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-top: var(--space-1);
+}
+
+/* Percentage sub-value shown below the main label */
+.stat-card__percentage {
+  margin-top: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border-light);
+}
+
+.stat-card__percentage-value {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-brand-maroon);
+}
+
+.stat-card__percentage-label {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}

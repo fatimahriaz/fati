@@ -1,0 +1,48 @@
+.meter-statuses-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.meter-statuses-page__header h2 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.meter-statuses-page__header p {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-top: var(--space-1);
+}
+
+.meter-statuses-page__stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+}
+
+/* Two charts side by side */
+.meter-statuses-page__charts {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-4);
+}
+
+.meter-statuses-page__table-title {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-3);
+  padding-left: var(--space-3);
+  border-left: 3px solid var(--color-brand-maroon);
+}
+
+@media (max-width: 1024px) {
+  .meter-statuses-page__stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .meter-statuses-page__charts {
+    grid-template-columns: 1fr;
+  }
+}

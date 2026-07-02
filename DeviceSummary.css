@@ -1,0 +1,38 @@
+.device-summary-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.device-summary-page__header h2 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.device-summary-page__header p {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-top: var(--space-1);
+}
+
+.device-summary-page__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+}
+
+.device-summary-page__table-title {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-3);
+  padding-left: var(--space-3);
+  border-left: 3px solid var(--color-brand-maroon);
+}
+
+@media (max-width: 1024px) {
+  .device-summary-page__stats {
+    grid-template-columns: 1fr 1fr;
+  }
+}
